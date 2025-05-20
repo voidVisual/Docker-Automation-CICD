@@ -40,3 +40,7 @@ This project showcases a fully automated CI/CD pipeline using **Jenkins (Master-
                                                   ---> [Push to Docker Hub]
                                                                       |
                                                                 [AWS EC2] ---> [Docker Pull + Run]
+Architecture Diagram
+![diagram-export-5-20-2025-1_16_07-PM](https://github.com/user-attachments/assets/fe197134-7be3-427d-b7f1-77449292871f)
+
+
