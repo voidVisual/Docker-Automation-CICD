@@ -67,6 +67,7 @@ This project demonstrates a production-grade **CI/CD pipeline** built with **Jen
 ---
 
 ## 📜 Jenkinsfile Example
+## Refer Jenkins file attached in Current Repositery
 
 ```groovy
 pipeline {
@@ -177,9 +178,9 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 ## 🙋 About the Author
 
 **Om Atmaram Ghorpade**  
-🚀 DevOps Enthusiast | AWS Cloud Engineer  
-📫 Reach me: tusharbhande2040@gmail.com  
+🚀 DevOps & Cloud Enthusiast 
+📫 Reach me: omghorpade212000@gmail.com  
 🔗 [GitHub (voidVisual)](https://github.com/voidVisual)  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)
+🔗 [LinkedIn](www.linkedin.com/in/omghorpade)
 
 ---
