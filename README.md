@@ -1,11 +1,11 @@
 
-# 🚀 Automated Docker Image Deployment to AWS EC2 using Jenkins, Docker Hub, and GitHub Webhook
+# Automated Docker Image Deployment to AWS EC2 using Jenkins, Docker Hub, and GitHub Webhook
 
 This project demonstrates a production-grade **CI/CD pipeline** built with **Jenkins (Master-Agent setup)**, **GitHub Webhooks**, **Docker**, **Docker Hub**, and **AWS EC2**. It automates the entire process from code push ➡ build ➡ image creation ➡ image push ➡ container deployment on an EC2 instance — enabling hands-free delivery of updates.
 
 ---
 ## Use the project travel-agency-website (https://github.com/voidVisual/travel-agency-website.git)
-## 📌 Project Summary
+## Project Summary
 
 - CI/CD pipeline built using **Jenkins** (master-agent model).
 - Automatic Docker image builds on every **GitHub push** using **GitHub Webhook**.
@@ -15,7 +15,7 @@ This project demonstrates a production-grade **CI/CD pipeline** built with **Jen
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Tool/Service     | Purpose                                      |
 |------------------|----------------------------------------------|
@@ -28,21 +28,21 @@ This project demonstrates a production-grade **CI/CD pipeline** built with **Jen
 
 ---
 
-## 🔄 CI/CD Pipeline Workflow
+## CI/CD Pipeline Workflow
 
-1. ✅ Code is pushed to **GitHub**
-2. 🔔 GitHub **Webhook** triggers **Jenkins**
-3. 🧠 Jenkins **Master** delegates job to an **Agent**
-4. 🛠️ Jenkins Agent:
+1. Code is pushed to **GitHub**
+2. GitHub **Webhook** triggers **Jenkins**
+3. Jenkins **Master** delegates job to an **Agent**
+4. Jenkins Agent:
     - Clones GitHub repository
     - Builds Docker image
     - Pushes the image to Docker Hub
-5. ☁️ AWS EC2 pulls the updated Docker image
-6. 🐳 Docker runs the new container on EC2
+5. AWS EC2 pulls the updated Docker image
+6. Docker runs the new container on EC2
 
 ---
 
-## 🧭 Architecture Diagram
+## Architecture Diagram
 
 ![Architecture Diagram](diagram-export-5-20-2025-1_16_07-PM.png)
 
@@ -50,7 +50,7 @@ This project demonstrates a production-grade **CI/CD pipeline** built with **Jen
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 .
@@ -66,7 +66,7 @@ This project demonstrates a production-grade **CI/CD pipeline** built with **Jen
 
 ---
 
-## 📜 Jenkinsfile Example
+## Jenkinsfile Example
 ## Refer Jenkins file attached in Current Repositery
 
 ```groovy
@@ -109,14 +109,14 @@ pipeline {
 
 ---
 
-## 🚀 How to Set Up This Project
+## How to Set Up This Project
 
-### 🖥️ 1. Launch EC2 Instances
+### 1. Launch EC2 Instances
 - One for Jenkins Master
 - Optional: One for Jenkins Agent
 - One for running the application container
 
-### 🔧 2. Install Required Software
+### 2. Install Required Software
 ```bash
 # On Jenkins EC2
 sudo apt update
@@ -125,12 +125,12 @@ sudo systemctl start docker
 sudo usermod -aG docker jenkins
 ```
 
-### 🧪 3. Setup Jenkins
+### 3. Setup Jenkins
 - Install plugins: Docker, Docker Pipeline, SSH Agent, GitHub Integration
 - Add **Docker Hub Credentials** and **SSH Key** to Jenkins
 - Create a pipeline job and paste your `Jenkinsfile`
 
-### 🌐 4. Configure GitHub Webhook
+### 4. Configure GitHub Webhook
 - GitHub → Repo → Settings → Webhooks
 - Payload URL: `http://<jenkins-ip>:8080/github-webhook/`
 - Content-Type: `application/json`
@@ -138,7 +138,7 @@ sudo usermod -aG docker jenkins
 
 ---
 
-## 🧪 Testing the Pipeline
+## Testing the Pipeline
 
 - Make a code change and push it to GitHub.
 - Check Jenkins: It should automatically trigger a build.
@@ -150,7 +150,7 @@ curl http://localhost
 
 ---
 
-## 🔐 Security Best Practices
+## Security Best Practices
 
 - Never hardcode credentials (use Jenkins credentials store).
 - Secure your EC2 with proper firewall rules.
@@ -159,7 +159,7 @@ curl http://localhost
 
 ---
 
-## 📈 Scaling the Pipeline
+## Scaling the Pipeline
 
 - Use **Jenkins Agents** for load balancing across builds.
 - Add monitoring with **Prometheus + Grafana**.
@@ -167,7 +167,7 @@ curl http://localhost
 
 ---
 
-## 🙋‍♂️ Contributing
+## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request. For major changes, open an issue first to discuss what you’d like to change.
 
@@ -175,12 +175,12 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 
 
-## 🙋 About the Author
+## About the Author
 
 **Om Atmaram Ghorpade**  
-🚀 DevOps & Cloud Enthusiast 
-📫 Reach me: omghorpade212000@gmail.com  
-🔗 [GitHub (voidVisual)](https://github.com/voidVisual)  
-🔗 [LinkedIn](www.linkedin.com/in/omghorpade)
+DevOps & Cloud Enthusiast 
+Reach me: omghorpade212000@gmail.com  
+[GitHub (voidVisual)](https://github.com/voidVisual)  
+[LinkedIn](www.linkedin.com/in/omghorpade)
 
 ---
